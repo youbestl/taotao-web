@@ -3,12 +3,15 @@ package com.taotao.web.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.taotao.common.bean.EasyUIResult;
+import com.taotao.manage.pojo.Content;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -31,7 +34,7 @@ public class IndexService {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
-    public String queryIndexAD1() {
+    /*public String queryIndexAD1() {
 
         try {
             String url = TAOTAO_MANAGE_URL+INDEX_AD1_URL;
@@ -52,6 +55,41 @@ public class IndexService {
                 map.put("src", row.get("pic").asText());
                 map.put("widthB", 550);
                 map.put("href", row.get("url"));
+                map.put("heightB", 240);
+                result.add(map);
+            }
+            return MAPPER.writeValueAsString(result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }*/
+
+    /**
+     * 利用 EasyUIResult 进行优化
+     * @return
+     */
+    public String queryIndexAD1() {
+
+        try {
+            String url = TAOTAO_MANAGE_URL+INDEX_AD1_URL;
+            String jsonData = apiService.doGet(url);
+            if (StringUtils.isEmpty(jsonData)) {
+                return null;
+            }
+
+            EasyUIResult easyUIResult = EasyUIResult.formatToList(jsonData, Content.class);
+            List<Content> contents = (List<Content>) easyUIResult.getRows();
+            ArrayList<Map<String, Object>> result = new ArrayList<>();
+            for (Content content : contents) {
+                LinkedHashMap<String, Object> map = new LinkedHashMap<>();
+                map.put("srcB", content.getPic());
+                map.put("height", 240);
+                map.put("alt", content.getTitle());
+                map.put("width", 670);
+                map.put("src", content.getPic());
+                map.put("widthB", 550);
+                map.put("href", content.getUrl());
                 map.put("heightB", 240);
                 result.add(map);
             }

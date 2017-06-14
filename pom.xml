@@ -18,6 +18,12 @@
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
+        <dependency>
+            <groupId>com.taotao.manage</groupId>
+            <artifactId>taotao-manage-pojo</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
 		<!-- 单元测试 -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -78,6 +84,14 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
 		</dependency>
+
+        <!--jedis依赖-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
 	</dependencies>
 
 	<build>
