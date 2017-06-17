@@ -3,6 +3,7 @@ package com.taotao.web.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.taotao.common.service.ApiService;
 import com.taotao.common.service.RedisService;
 import com.taotao.manage.pojo.ItemDesc;
 import com.taotao.manage.pojo.ItemParamItem;
@@ -22,9 +23,10 @@ public class ItemService {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
-    private static final String REDIS_KEY ="TAOTAO_WEB_ITEM_DETAIL";
+    public static final String REDIS_KEY ="TAOTAO_WEB_ITEM_DETAIL";
 
     private static final int REDIS_TIME = 60 * 60 * 60 * 24 * 30 * 3;
+
 
 
     @Autowired
