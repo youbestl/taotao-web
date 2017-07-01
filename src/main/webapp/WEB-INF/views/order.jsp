@@ -7,9 +7,9 @@
   <head>
 	<meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" /> 
-    <meta name="format-detection" content="telephone=no" />  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <meta http-equiv="expires" content="0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>订单结算页 -淘淘商城</title>
@@ -71,10 +71,10 @@
 							 <div class="sbox">
 	<div class="s-content">
 	 <p>
-	  		花和尚 &nbsp; 15800007000 &nbsp;  &nbsp; 
+	  		花和尚 &nbsp; 15800007000 &nbsp;  &nbsp;
 		<br/>
 				   上海 闵行区 外环以外  &nbsp;
-				三鲁公路3279号 明浦广场 3号楼 205室 
+				三鲁公路3279号 明浦广场 3号楼 205室
 			  	  </p>
 	</div>
 </div>						</div><!--@end div#consignee-->
@@ -92,17 +92,17 @@
 							<div class="sbox">
 	<div class="s-content payment-info">
 		<div class="payment-selected">
-									在线支付  
+									在线支付
 					<span id="baitiaomessage" style="display:none"><font color="#FF6600;">&nbsp;使用在线支付支持打白条</font></span>
 						<span class="easyPayWarning"></span>
 							        		</div>
-	    
+
         <div class="way-list">
 	        			        				         <div class="way-item">
-			            淘淘快递&nbsp;&nbsp;中小件商品&nbsp;&nbsp;<font color='#FF6600;'>工作日、双休日与假日均可送货</font> &nbsp;  
+			            淘淘快递&nbsp;&nbsp;中小件商品&nbsp;&nbsp;<font color='#FF6600;'>工作日、双休日与假日均可送货</font> &nbsp;
 			             			             <span id="promise_jd_message"></span>
 			             			          </div>
-	        			
+
 	        														</div>
 	</div>
 	</div>
@@ -113,7 +113,7 @@
 						 						<!--<div id="shipment"></div>-->
 					</div>
 				</div>
-				
+
 				<div id="step-3" class="step step-complete"><a name="invoiceFocus"></a>
 					<div class="step-title">
 						<div id="save-invoice-tip" class="step-right">
@@ -126,10 +126,10 @@
 							<div class="sbox">
 	<div class="invoice">
 		<div class="invoice-content">
-							普通发票（电子） &nbsp; 个人 
+							普通发票（电子） &nbsp; 个人
 				&nbsp; 明细
 				&nbsp;  <br />
-								
+
 				<div class="ftx-04 invoice-prompt">
                     <dl class="clearfix">
                        <dt>温馨提示：</dt>
@@ -142,7 +142,7 @@
 						<div class="invoice-note" style="display:none">
 									备注：如商品由第三方卖家销售，发票内容由其卖家决定，发票由卖家开具并寄出
 					<a href="#none" class="tips-i" id="bill-tip-btn">&nbsp;</a>
-				
+
 			</div>
 		</div>
 	</div>
@@ -243,12 +243,12 @@
 			</tbody>
         </table>
 	 </div>
-	   
-	       	 	 
-<!--********滿贈套装結束*********-->						
+
+
+<!--********滿贈套装結束*********-->
 </div>
 <!--**********商品清单内容列表结束************-->
-                                        </span>		
+                                        </span>
 										<div class="order-summary">
 											<div class="summary-form fl">
 												<div class="safe-tip" style="display:none" id="safeVerciryPromptPart">&nbsp;&nbsp;&nbsp;&nbsp;为保障您的账户资金安全，余额暂时不可用，请先<a target="_blank" href="http://safe.jd.com/user/paymentpassword/safetyCenter.action">开启支付密码</a></div>
@@ -258,13 +258,13 @@
                                                 <div class="list"><span><em id="span-skuNum">1</em> 件商品，总商品金额：</span><em class="price" id="warePriceId" v="<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/>">￥<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/></em></div>
                                                 <div class="list"><span>返现：</span><em class="price" id="cachBackId" v="0.00"> -￥0.00</em></div>
                                                 <div class="list" id="showFreightPrice" style="padding-left:140px;">
-                                                		<span id="freightSpan"  style="width:40px;"   >运费：</span> 
+                                                		<span id="freightSpan"  style="width:40px;"   >运费：</span>
                                                 		<em class="price" id="freightPriceId"  > ￥0.00</em>
                                                 </div>
-                                                <div class="list"><span>应付总额：</span><em id="sumPayPriceId" class="price"> ￥<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/></em></div>			
+                                                <div class="list"><span>应付总额：</span><em id="sumPayPriceId" class="price"> ￥<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/></em></div>
 											</div>
 											<div class="span clr"></div>
-											
+
 										</div><!--@end div.order-summary-->
 									</div>
 								</div><!--@end div#order-cart-->
@@ -281,7 +281,7 @@
                                         提交订单
                                         <b></b>
                                 </button>
-																	<span class="total">应付总额：<strong id="payPriceId">￥<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/></strong>元 
+																	<span class="total">应付总额：<strong id="payPriceId">￥<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/></strong>元
 	    							</span>
 																<div class="checkout-submit-tip" id="changeAreaAndPrice" style="display: none;">由于地址更换，价格可能发生变化，请核对后再提交订单</div>
 								<div style="display:none" id="factoryShipCodShowDivBottom" class="dispatching">
@@ -311,10 +311,10 @@
     <script type="text/javascript" src="/js/jTips.js"></script>
     <script type="text/javascript" src="/js/calendar.js"></script>
 	<script type="text/javascript">
-		
+
 	$('#bill-tip-btn').Jtips({//随点随帮tip弹出
 		"content":'<a target="_blank" href="http://help.jd.com/help/question-61.html#kjfpf">如何区分淘淘销售和第三方卖家销售的商品?</a>',
-		"close":true,			
+		"close":true,
 	    "position": 'bottom'
 	});
 	//<![CDATA[
@@ -380,7 +380,7 @@
 		};
 	})();
 	//]]>
-	
+
 	//防止窗口变换，弹窗错位
 	$(window).resize(function(){
            var obj=$("#freightSpan");
