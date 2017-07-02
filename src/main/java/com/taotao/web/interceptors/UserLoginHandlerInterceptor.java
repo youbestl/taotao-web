@@ -24,7 +24,7 @@ public class UserLoginHandlerInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        UserTreadLocal.set(null); //清空本地线程中user对象 --->涉及到 tomcat 线程池的原理，如果不清空有可能拿到未清空user数据的线程
+
         String loginUrl = this.userService.TAOTAO_SSO_URL + "/user/login.html";
         String token = CookieUtils.getCookieValue(httpServletRequest, COOKIE_NAME);
 
@@ -50,6 +50,6 @@ public class UserLoginHandlerInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
-
+        UserTreadLocal.set(null); //清空本地线程中user对象 --->涉及到 tomcat 线程池的原理，如果不清空有可能拿到未清空user数据的线程
     }
 }
